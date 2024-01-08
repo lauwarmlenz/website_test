@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michalfritsch.at</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    </head>
+
+<body>
+
+    <!-- Header Section -->
+   <header>
+    <nav id="desktop-nav">
+        <div class="logo">Michael Fritsch</div>
+        <div>
+        <ul class="nav-links">
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="about.html">Über mich</a></li>
+           
+            <!-- Add other navigation items as needed -->
+        </ul>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo">Michael Fritsch</div>
+         <div class="hamburger-menu"> 
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>  
+                <span></span>   
+                <span></span>
+             </div>
+    <div class="menu-links">
+        <ul>
+        <li><a href="#newsletter" onclick="toggleMenu()">Newsletter</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">Über mich</a></li>
+    </ul>
+         </div>
+    </div>  
+</nav>
+    
+</header> 
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+        <h2>lau/warm</h2>
+         <!-- Picture Section -->
+        <section id="picture">
+            <img src="/Users/michaelfritsch/Desktop/presse/FUJI6945.JPG" alt="Description of the Picture">
+        </section>
+        <p>Ein Newsletter von Michael Fritsch</p>
+        <!-- Newsletter Signup Form -->
+<form action="subscribe.php" method="post" id="signup-form">
+    <div class="email-container">
+    <input type="email" id="email" placeholder="Enter your email address" required>
+    <input type="text" id="first-name" placeholder="Vorname" required>
+    <input type="submit" value="submit">
+    </div>
+
+</form>
+
+    </section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Social Media Icons -->
+        <div class="social-media-icons">
+            <!-- Instagram Icon (Replace the href value with your Instagram profile link) -->
+            <a href="https://www.instagram.com/your_username_here" target="_blank" rel="noopener noreferrer">
+                <img src="/Users/michaelfritsch/Desktop/presse/Instagram_Glyph_Black.png" alt="Instagram" title="Instagram">
+            </a>
+            <a href="mailto:booking@michael-fritsch.at" target="_blank" rel="noopener noreferrer">
+                <img src="/Users/michaelfritsch/Desktop/presse/alternate_email_FILL0_wght400_GRAD0_opsz24.png" alt="booking@michael-fritsch.at" title="Email">
+            </a>
+        </div>
+
+        <!-- Footer Navigation Links -->
+        <div class="footer-links">
+            <ul>
+                <li><a href="impressum.html">impressum</a></li>
+                <li><a href="datenschutz.html">datenschutz</a></li>
+                <li><a href="#">cookies</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

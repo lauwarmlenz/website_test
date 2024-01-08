@@ -1,0 +1,338 @@
+/* ... general...*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ {
+     margin: 0;
+     padding: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth
+}
+
+/*Transition*/
+
+a, .btn{
+    transition: all 300ms ease; 
+}
+
+/*Desktop Nav*/
+
+nav, .nav-links {
+    display:flex 
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.nav-links {
+    gap: 2rem; 
+    list-style: none;
+    font-size: 1.1rem;
+    
+}
+
+a{
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: grey;
+}
+.logo {
+    font-size: 1.5rem; 
+}
+.logo:hover{
+    cursor: default;
+}
+
+/*hamburger menu*/ 
+
+#hamburger-nav {
+    display:none;
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 23px;
+width: 30px;
+cursor:pointer
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+
+} 
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    flex-direction: column;
+  
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+   opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none; 
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    margin: auto;
+}
+
+#picture {
+    display: flex;
+    justify-content: flex-start; /* Centers the image horizontally */
+    align-items: center;     /* Centers the image vertically */
+    max-width: 150%;
+    margin-bottom: 10px;
+    height: 150px;   
+}
+
+#picture img {
+  
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
+    margin-left: -2%;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* ... Previous Styles ... */
+
+/* Header Styles */
+header {
+    
+   
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+    margin-right: 20px;
+    
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+    
+}
+
+nav ul li a {
+    color: #fffff;
+    text-decoration: none;
+    text-align: right; 
+}
+
+.email-container {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #ccc; /* Optional: add a border for better visual distinction */
+    border-radius: 5px; /* Optional: rounded corners */
+    overflow: hidden; /* Ensure the children elements don't overflow */
+}
+
+.email-container input[type="email"],
+.email-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+
+}
+
+.email-container input[type="text"] 
+{
+    margin-right: -20px;
+}
+.email-container input[type="submit"] {
+    padding: 10px 20px;
+    width: 80px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-container input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 0px 0;
+    font-size: 0.9rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 0;
+    padding: 0 0px;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1); /* Optional: Increase the size of the icon on hover */
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+
+.footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+    color: #555;
+}
